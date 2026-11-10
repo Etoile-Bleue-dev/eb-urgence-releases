@@ -29,7 +29,7 @@
       <h1>EB Urgence TEST</h1>
       <p>Réservée à l'équipe technique et aux testeurs. Elle est branchée sur le serveur de test et s'installe à côté de l'application normale, sans la remplacer.</p>
       <div class="cta">
-        <a id="download" class="btn-dl" href="https://github.com/rajjys/eb-urgence-releases/releases/download/test-latest/EB-Urgence-TEST.apk">
+        <a id="download" class="btn-dl" href="https://github.com/Etoile-Bleue-dev/eb-urgence-releases/releases/download/test-latest/EB-Urgence-TEST.apk">
           <svg class="robot" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M2 19a10 10 0 0 1 20 0ZM8 13.2a1.2 1.2 0 1 0 0 2.4a1.2 1.2 0 0 0 0-2.4Zm8 0a1.2 1.2 0 1 0 0 2.4a1.2 1.2 0 0 0 0-2.4Z"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M6.6 10.7 4.7 7.6M17.4 10.7l1.9-3.1"/></svg>
           <span class="txt"><span class="l1" id="download-l1">Télécharger</span><span class="l2">EB Urgence TEST</span></span>
           <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
@@ -59,7 +59,7 @@
     (function () {
       var bouton = document.getElementById('download');
       var info = document.getElementById('release');
-      fetch('https://api.github.com/repos/rajjys/eb-urgence-releases/releases/tags/test-latest', { headers: { Accept: 'application/vnd.github+json' } })
+      fetch('https://api.github.com/repos/Etoile-Bleue-dev/eb-urgence-releases/releases/tags/test-latest', { headers: { Accept: 'application/vnd.github+json' } })
         .then(function (r) {
           if (r.status === 404) throw 'aucune';
           if (!r.ok) throw 'ignorer';
