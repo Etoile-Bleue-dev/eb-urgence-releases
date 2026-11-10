@@ -120,7 +120,7 @@
           if (!apk) return;
           var date = new Date(publication.published_at).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
           var nom = (publication.name || '').replace(/^EB Urgence\s*/, '') || 'Dernière version';
-          info.textContent = 'Version ' + nom + ' · ' + Math.round(apk.size / 1048576) + ' Mo · publiée le ' + date;
+          info.textContent = 'Version ' + nom + ' · ' + Math.round(apk.size / 1048576) + ' Mo\npubliée le ' + date;
         })
         .catch(function (raison) {
           if (raison !== 'aucune') return;

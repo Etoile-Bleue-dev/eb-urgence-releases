@@ -72,7 +72,7 @@ a { color: var(--link); }
 .btn.is-disabled {
   background: var(--raised); color: var(--muted); box-shadow: none; pointer-events: none;
 }
-.meta { margin: 12px 0 0; color: var(--text-2); font-size: 15px; }
+.meta { margin: 12px 0 0; color: var(--text-2); font-size: 15px; white-space: pre-line; }
 .hint { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
 .link-btn {
   margin-top: 14px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--border);
