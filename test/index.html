@@ -3,52 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>EB Urgence TEST · Installation</title>
-  <meta name="theme-color" content="#0D0D0D">
+  <title>Version de test · EB Urgence</title>
   <meta name="robots" content="noindex">
-  <link rel="icon" href="../icon.png">
-  <link rel="stylesheet" href="../style.css">
+  <meta name="theme-color" content="#0D0D0D">
+  <link rel="icon" type="image/png" href="/assets/favicon-64.png">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <img class="app-icon" src="../icon.png" width="88" height="88" alt="">
-      <span class="badge">Version de test</span>
-      <h1>EB Urgence TEST</h1>
-      <p class="lead">Réservée à l'équipe technique et aux testeurs. Branchée sur le serveur de test.</p>
-    </header>
-
-    <section class="cta" aria-label="Téléchargement">
-      <a id="download" class="btn" href="https://github.com/rajjys/eb-urgence-releases/releases/download/test-latest/EB-Urgence-TEST.apk">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-        <span id="download-label">Télécharger la version de test</span>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="EB Urgence, accueil">
+        <img src="/assets/icon-192.png" width="34" height="34" alt="">
+        <span><strong>EB Urgence</strong><small>Étoile Bleue</small></span>
       </a>
-      <p id="release-info" class="meta">S'installe à côté de l'application normale, sans la remplacer.</p>
-    </section>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="/aide/">Aide</a>
+        <a href="/">Application</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="card">
-      <h2>À savoir</h2>
-      <p>Les données de test sont jetables. N'utilisez jamais cette version pour une vraie intervention.</p>
-    </section>
+  <main class="wrap">
+    <div class="page-head">
+      <span class="badge-test">Version de test</span>
+      <h1>EB Urgence TEST</h1>
+      <p>Réservée à l'équipe technique et aux testeurs. Elle est branchée sur le serveur de test et s'installe à côté de l'application normale, sans la remplacer.</p>
+      <div class="cta">
+        <a id="download" class="btn-dl" href="https://github.com/rajjys/eb-urgence-releases/releases/download/test-latest/EB-Urgence-TEST.apk">
+          <svg class="robot" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M2 19a10 10 0 0 1 20 0ZM8 13.2a1.2 1.2 0 1 0 0 2.4a1.2 1.2 0 0 0 0-2.4Zm8 0a1.2 1.2 0 1 0 0 2.4a1.2 1.2 0 0 0 0-2.4Z"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M6.6 10.7 4.7 7.6M17.4 10.7l1.9-3.1"/></svg>
+          <span class="txt"><span class="l1" id="download-l1">Télécharger</span><span class="l2">EB Urgence TEST</span></span>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+        </a>
+        <p id="release" class="release">Nouvelle version à chaque changement natif. Les autres changements arrivent par mise à jour automatique.</p>
+      </div>
+    </div>
 
-    <footer class="foot">
-      <p><a href="../">Application EB Urgence (équipes d'intervention)</a></p>
-    </footer>
+    <div class="doc">
+      <section class="card contact">
+        <div class="notice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+          <span>Les données du serveur de test sont jetables. N'utilisez jamais cette version pour une vraie intervention.</span>
+        </div>
+        <p>Installation et autorisations&nbsp;: comme pour l'application normale, voir <a href="/aide/">l'aide</a>. Dans <kbd>Profil</kbd>, la ligne de version commence par «&nbsp;TEST&nbsp;».</p>
+      </section>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="legal">© 2026 Étoile Bleue. Version interne, non destinée aux équipes d'intervention.</p>
+    </div>
+  </footer>
 
   <script>
     (function () {
       var bouton = document.getElementById('download');
+      var info = document.getElementById('release');
       fetch('https://api.github.com/repos/rajjys/eb-urgence-releases/releases/tags/test-latest', { headers: { Accept: 'application/vnd.github+json' } })
-        .then(function (reponse) {
-          if (reponse.status !== 404) return;
+        .then(function (r) {
+          if (r.status === 404) throw 'aucune';
+          if (!r.ok) throw 'ignorer';
+          return r.json();
+        })
+        .then(function (p) {
+          var apk = (p.assets || []).filter(function (a) { return a.name === 'EB-Urgence-TEST.apk'; })[0];
+          if (!apk) throw 'aucune';
+          var date = new Date(apk.updated_at).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+          info.textContent = 'APK de test · ' + Math.round(apk.size / 1048576) + ' Mo\nMis à jour le ' + date;
+        })
+        .catch(function (raison) {
+          if (raison !== 'aucune') return;
           bouton.classList.add('is-disabled');
           bouton.removeAttribute('href');
           bouton.setAttribute('aria-disabled', 'true');
-          document.getElementById('download-label').textContent = 'Pas encore disponible';
-          document.getElementById('release-info').textContent = "Aucune version de test n'est encore publiée.";
-        })
-        .catch(function () {});
+          document.getElementById('download-l1').textContent = 'Pas encore disponible';
+          info.textContent = "Aucune version de test n'est encore publiée.";
+        });
     })();
   </script>
 </body>
