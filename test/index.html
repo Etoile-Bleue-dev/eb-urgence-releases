@@ -1,5 +1,55 @@
 <!doctype html>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1r7ZROMjkVxOvhpCqrK4MoXbtPF8EZJBr/view?usp=sharing">
-<title>Téléchargement EB Urgence TEST</title>
-<a href="https://drive.google.com/file/d/1r7ZROMjkVxOvhpCqrK4MoXbtPF8EZJBr/view?usp=sharing">Si le téléchargement ne démarre pas, appuyez ici.</a>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EB Urgence TEST · Installation</title>
+  <meta name="theme-color" content="#0D0D0D">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img class="app-icon" src="../icon.png" width="88" height="88" alt="">
+      <span class="badge">Version de test</span>
+      <h1>EB Urgence TEST</h1>
+      <p class="lead">Réservée à l'équipe technique et aux testeurs. Branchée sur le serveur de test.</p>
+    </header>
+
+    <section class="cta" aria-label="Téléchargement">
+      <a id="download" class="btn" href="https://github.com/rajjys/eb-urgence-releases/releases/download/test-latest/EB-Urgence-TEST.apk">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        <span id="download-label">Télécharger la version de test</span>
+      </a>
+      <p id="release-info" class="meta">S'installe à côté de l'application normale, sans la remplacer.</p>
+    </section>
+
+    <section class="card">
+      <h2>À savoir</h2>
+      <p>Les données de test sont jetables. N'utilisez jamais cette version pour une vraie intervention.</p>
+    </section>
+
+    <footer class="foot">
+      <p><a href="../">Application EB Urgence (équipes d'intervention)</a></p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var bouton = document.getElementById('download');
+      fetch('https://api.github.com/repos/rajjys/eb-urgence-releases/releases/tags/test-latest', { headers: { Accept: 'application/vnd.github+json' } })
+        .then(function (reponse) {
+          if (reponse.status !== 404) return;
+          bouton.classList.add('is-disabled');
+          bouton.removeAttribute('href');
+          bouton.setAttribute('aria-disabled', 'true');
+          document.getElementById('download-label').textContent = 'Pas encore disponible';
+          document.getElementById('release-info').textContent = "Aucune version de test n'est encore publiée.";
+        })
+        .catch(function () {});
+    })();
+  </script>
+</body>
+</html>
