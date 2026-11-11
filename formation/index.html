@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Guide de l'urgentiste · EB Urgence</title>
+  <meta name="description" content="Le parcours complet d'une intervention avec EB Urgence, écran par écran : connexion, mise en service, mission, bilan, orientation, clôture.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://apps.urgences-rdc.com/formation/">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EB Urgence">
+  <meta property="og:title" content="Guide de l'urgentiste · EB Urgence">
+  <meta property="og:description" content="Le parcours complet d'une intervention, écran par écran, de la connexion à la clôture.">
+  <meta property="og:image" content="https://apps.urgences-rdc.com/assets/og.jpg">
+  <meta property="og:url" content="https://apps.urgences-rdc.com/formation/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="/assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="EB Urgence, accueil">
+        <img src="/assets/icon-192.png" width="34" height="34" alt="">
+        <span><strong>EB Urgence</strong><small>Étoile Bleue</small></span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="/formation/" aria-current="page">Formation</a>
+        <a class="wide" href="/#installer">Installer</a>
+        <a href="/aide/">Aide</a>
+        <a class="btn btn-primary btn-sm" href="/#telecharger" aria-label="Télécharger l'application">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+          <span class="label">Télécharger</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="wrap">
+    <header class="page-head slide" id="debut">
+      <p class="crumbs"><a href="/">Accueil</a> › Formation</p>
+      <span class="kicker">Formation terrain</span>
+      <h1>Le guide de l'urgentiste</h1>
+      <p class="intro">Le parcours complet d'une intervention avec EB Urgence, de la connexion à la clôture. À lire avant sa première garde. En session, comptez environ une heure&nbsp;: présentation, démonstration, atelier pratique et questions.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#comprendre">Commencer la lecture</a>
+        <button class="btn btn-secondary present-btn" type="button" id="present-start">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Mode présentation
+        </button>
+      </div>
+      <aside class="notes"><strong>Notes du formateur.</strong> Rappeler que l'application est reliée en temps réel à la centrale et aux hôpitaux partenaires. Demander qui l'a déjà utilisée.</aside>
+    </header>
+
+    <div class="guide">
+      <nav class="guide-toc" aria-label="Sommaire du guide">
+        <details open id="toc">
+          <summary>Sommaire</summary>
+          <ol>
+            <li><a class="part-link" href="#comprendre">1. Comprendre l'application</a></li>
+            <li><a class="lesson-link" href="#pourquoi">Un outil pour les missions critiques</a></li>
+            <li><a class="lesson-link" href="#acteurs">Qui utilise quoi&nbsp;?</a></li>
+            <li><a class="part-link" href="#prise-en-main">2. Prise en main</a></li>
+            <li><a class="lesson-link" href="#connexion">Se connecter</a></li>
+            <li><a class="lesson-link" href="#onglets">Quatre onglets</a></li>
+            <li><a class="lesson-link" href="#service">Activer le service</a></li>
+            <li><a class="part-link" href="#mission">3. La mission pas à pas</a></li>
+            <li><a class="lesson-link" href="#cycle">De l'alerte à la clôture</a></li>
+            <li><a class="lesson-link" href="#alerte">Recevoir une mission</a></li>
+            <li><a class="lesson-link" href="#reprendre">Reprendre une mission</a></li>
+            <li><a class="lesson-link" href="#en-route">En route vers le patient</a></li>
+            <li><a class="lesson-link" href="#signalement">Le signalement</a></li>
+            <li><a class="lesson-link" href="#victimes">Une ou plusieurs victimes</a></li>
+            <li><a class="lesson-link" href="#abcde">Le bilan ABCDE</a></li>
+            <li><a class="lesson-link" href="#constantes">Les constantes</a></li>
+            <li><a class="lesson-link" href="#soins">Premiers soins et médicaments</a></li>
+            <li><a class="lesson-link" href="#evacuation">Évacuer ou traiter sur place</a></li>
+            <li><a class="lesson-link" href="#affectation">Choisir l'hôpital</a></li>
+            <li><a class="lesson-link" href="#hopital">Ce que voit l'hôpital</a></li>
+            <li><a class="lesson-link" href="#transport">Vers l'hôpital</a></li>
+            <li><a class="lesson-link" href="#cloture">Clôturer l'intervention</a></li>
+            <li><a class="part-link" href="#outils">4. Les outils</a></li>
+            <li><a class="lesson-link" href="#appels">Appels</a></li>
+            <li><a class="lesson-link" href="#journal">Journal d'intervention</a></li>
+            <li><a class="lesson-link" href="#carte">Carte</a></li>
+            <li><a class="lesson-link" href="#profil">Profil et ressources</a></li>
+            <li><a class="part-link" href="#a-retenir">5. À retenir</a></li>
+            <li><a class="lesson-link" href="#reflexes">Les bons réflexes</a></li>
+            <li><a class="lesson-link" href="#erreurs">Les erreurs fréquentes</a></li>
+            <li><a class="lesson-link" href="#glossaire">Glossaire</a></li>
+            <li><a class="lesson-link" href="#atelier">Atelier pratique</a></li>
+            <li><a class="lesson-link" href="#apres">Après la formation</a></li>
+          </ol>
+        </details>
+      </nav>
+
+      <div class="guide-body">
+        <!-- ============ Partie 1 ============ -->
+        <section class="part" id="comprendre">
+          <header class="part-head slide">
+            <span class="kicker">Partie 1</span>
+            <h2>Comprendre l'application</h2>
+            <p>Ce que fait l'application et sa place dans la chaîne des secours.</p>
+          </header>
+
+          <article class="lesson slide" id="pourquoi">
+            <div>
+              <h3>Un outil pour les missions critiques</h3>
+              <p class="lead">Sur le terrain, chaque minute compte. L'application réunit ce qui était dispersé entre appels, papier et messages, pour une prise en charge suivie et coordonnée.</p>
+              <dl class="defs">
+                <div><dt>Alertes en temps réel</dt><dd>Les missions de la centrale arrivent avec un son et une notification plein écran.</dd></div>
+                <div><dt>Position et disponibilité</dt><dd>La position n'est partagée que lorsque l'unité est en service.</dd></div>
+                <div><dt>Bilan clinique</dt><dd>ABCDE, constantes, soins et décisions dans un dossier structuré.</dd></div>
+                <div><dt>Orientation du patient</dt><dd>Choix de la structure adaptée et suivi jusqu'à l'admission.</dd></div>
+              </dl>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> L'application remplace le papier et les appels dispersés par un seul fil, traçable. Insister sur l'intérêt pour le rapport d'intervention et la coordination.</aside>
+          </article>
+
+          <article class="lesson slide" id="acteurs">
+            <div>
+              <h3>Qui utilise quoi&nbsp;?</h3>
+              <p class="lead">Quatre acteurs forment la chaîne des secours. Votre rôle&nbsp;: l'étape terrain, entre l'envoi de la mission et l'admission à l'hôpital.</p>
+              <ol class="chain">
+                <li><strong>Citoyen</strong>Appelle les secours et décrit la situation.</li>
+                <li><strong>Centrale de régulation</strong>Reçoit l'appel, évalue et envoie l'équipe adaptée.</li>
+                <li class="you"><strong>Vous, l'équipe d'intervention</strong>Intervenez, évaluez, soignez et orientez le patient.</li>
+                <li><strong>Hôpital</strong>Accepte l'admission et prend le relais.</li>
+              </ol>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer la chaîne Citoyen → Centrale → Vous → Hôpital. Chaque acteur ne voit que ce dont il a besoin.</aside>
+          </article>
+        </section>
+
+        <!-- ============ Partie 2 ============ -->
+        <section class="part" id="prise-en-main">
+          <header class="part-head slide">
+            <span class="kicker">Partie 2</span>
+            <h2>Prise en main</h2>
+            <p>Les trois gestes de chaque début de garde&nbsp;: se connecter, se repérer, activer le service.</p>
+          </header>
+
+          <article class="lesson slide has-shot" id="connexion">
+            <div>
+              <h3>Se connecter</h3>
+              <p class="lead">Chaque agent a un identifiant et un code PIN personnels. Sans connexion, aucune mission n'est accessible.</p>
+              <ul class="list">
+                <li>L'identifiant et le code vous sont remis par votre référent.</li>
+                <li>Le code est <strong>personnel et confidentiel</strong>&nbsp;: ne le partagez jamais, même avec un collègue.</li>
+                <li>Session expirée ou application fermée&nbsp;: reconnectez-vous avant de reprendre.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/connexion.jpg" width="540" height="1200" alt="Écran de connexion : identifiant, code PIN et pavé numérique" loading="lazy" decoding="async"></div></div>
+              <figcaption>Écran de connexion</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer l'écran de connexion sur un téléphone. Vérifier que chaque binôme a ses identifiants de test.</aside>
+          </article>
+
+          <article class="lesson slide" id="onglets">
+            <div>
+              <h3>Quatre onglets</h3>
+              <p class="lead">L'application repose sur quatre onglets, toujours visibles en bas de l'écran. L'accueil concentre l'essentiel de la garde.</p>
+              <dl class="defs">
+                <div><dt>Accueil</dt><dd>Service, alertes entrantes, mission en cours.</dd></div>
+                <div><dt>Carte</dt><dd>Incidents, hôpitaux et collègues en service.</dd></div>
+                <div><dt>Historique</dt><dd>Interventions passées, appels et rapports.</dd></div>
+                <div><dt>Profil</dt><dd>Unité, disponibilité, protocoles et statistiques.</dd></div>
+              </dl>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> L'accueil est le point de départ de chaque garde. Montrer qu'on peut changer d'onglet sans perdre une mission en cours.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="service">
+            <div>
+              <h3>Activer le service</h3>
+              <p class="lead">C'est la première action de la garde. Tant que l'unité n'est pas en service, la centrale ne peut ni la localiser ni lui confier de mission.</p>
+              <ul class="list">
+                <li>Maintenez le bouton <strong>Activer le service</strong> ou <strong>Passer hors service</strong> pour changer l'état de l'unité.</li>
+                <li>L'accueil affiche l'état&nbsp;: <em>Prêt pour intervention</em>, <em>Service désactivé</em> ou <em>Hors ligne</em>.</li>
+                <li>Le service est celui de l'unité&nbsp;: il vaut pour tous les équipiers connectés.</li>
+                <li>La position n'est transmise <strong>qu'en service</strong>&nbsp;: rien n'est partagé hors garde.</li>
+                <li>Pendant une mission, le service ne peut pas être coupé.</li>
+              </ul>
+              <p class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg><span>Règle d'or&nbsp;: pas de service, pas d'alerte, pas de mission.</span></p>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><div class="status" aria-hidden="true"><span>08:30</span><span class="icons"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 20h3v-4H3zM8.5 20h3v-8h-3zM14 20h3V8h-3zM19.5 20h3V4h-3z"/></svg></span></div><img class="shot" src="/assets/app-accueil.jpg" width="640" height="1251" alt="Accueil : unité prête pour intervention, bouton Passer hors service" loading="lazy" decoding="async"><div class="gesture"></div></div></div>
+              <figcaption>Accueil, unité en service</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Activer puis désactiver le service, montrer le changement d'état et son effet sur la carte de la centrale.</aside>
+          </article>
+        </section>
+
+        <!-- ============ Partie 3 ============ -->
+        <section class="part" id="mission">
+          <header class="part-head slide">
+            <span class="kicker">Partie 3</span>
+            <h2>La mission pas à pas</h2>
+            <p>Chaque étape correspond à un écran de l'application. Revenez au cycle ci-dessous pour situer où vous en êtes.</p>
+          </header>
+
+          <article class="lesson slide" id="cycle">
+            <div>
+              <h3>De l'alerte à la clôture</h3>
+              <p class="lead">Le fil rouge de la formation&nbsp;: sept étapes, détaillées dans les fiches qui suivent.</p>
+              <ol class="flow" style="margin-top:28px">
+                <li><strong>Alerte</strong><span>Accepter ou refuser</span></li>
+                <li><strong>En route</strong><span>Navigation vers le patient</span></li>
+                <li><strong>Sur place</strong><span>Victimes et bilan ABCDE</span></li>
+                <li><strong>Soins</strong><span>Constantes, gestes, médicaments</span></li>
+                <li><strong>Décision</strong><span>Évacuer ou traiter sur place</span></li>
+                <li><strong>Hôpital</strong><span>Affectation, transport, remise</span></li>
+                <li><strong>Clôture</strong><span>Rapport d'intervention</span></li>
+              </ol>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Revenir à ce schéma après chaque partie. Demander aux participants de retenir les sept étapes.</aside>
+          </article>
+
+          <article class="lesson slide" id="alerte">
+            <div>
+              <h3>Recevoir une mission</h3>
+              <p class="lead">Quand la centrale vous confie une mission, une alarme retentit et une fenêtre plein écran s'ouvre. Vous acceptez ou refusez dans le délai affiché.</p>
+              <ul class="list">
+                <li>Alarme sonore et fenêtre plein écran, même téléphone verrouillé.</li>
+                <li>La fenêtre résume le motif, le patient, l'adresse et la distance.</li>
+                <li><strong>Accepter la mission</strong> ou <strong>Refuser la mission</strong>&nbsp;: maintenez le bouton appuyé pour valider.</li>
+                <li>Un compte à rebours indique le temps restant pour répondre.</li>
+                <li>Un refus demande un motif&nbsp;: <em>Indisponible actuellement</em>, <em>Trop loin / hors zone</em>, <em>Véhicule en panne</em> ou <em>Autre raison</em>.</li>
+              </ul>
+              <p class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg><span>Mieux vaut refuser honnêtement qu'accepter sans pouvoir intervenir à temps.</span></p>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Le refus est visible par la centrale. Discuter des cas où refuser est la bonne décision.</aside>
+          </article>
+
+          <article class="lesson slide" id="reprendre">
+            <div>
+              <h3>Reprendre une mission</h3>
+              <p class="lead">L'accueil affiche toujours la mission en cours. Votre progression est enregistrée&nbsp;: fermer l'application ne fait pas perdre le dossier.</p>
+              <ul class="list">
+                <li><strong>Afficher l'alerte</strong>&nbsp;: la mission est reçue mais pas encore acceptée.</li>
+                <li><strong>Continuer le processus</strong>&nbsp;: reprendre à l'étape où vous étiez.</li>
+                <li>Après un redémarrage, l'application revient d'elle-même à la dernière étape.</li>
+              </ul>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer la carte «&nbsp;Intervention en cours&nbsp;» de l'accueil, puis fermer et rouvrir l'application.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="en-route">
+            <div>
+              <h3>En route vers le patient</h3>
+              <p class="lead">Une fois la mission acceptée, cet écran devient votre tableau de bord&nbsp;: navigation, statut et communications au même endroit.</p>
+              <ul class="list">
+                <li>Carte plein écran avec l'itinéraire vers le patient.</li>
+                <li>Statuts successifs&nbsp;: <em>Dispatché</em>, <em>En route</em>, <em>Sur zone</em>, <em>Terminé</em>.</li>
+                <li>Journal d'intervention et appel de la centrale en un geste.</li>
+                <li>À l'arrivée, touchez <strong>Arrivé sur site</strong>.</li>
+              </ul>
+              <p class="callout warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><span>Confirmez toujours «&nbsp;Arrivé sur site&nbsp;» avant de commencer le bilan.</span></p>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/en-route.jpg" width="554" height="1200" alt="Navigation vers le patient avec le bouton Arrivé sur site" loading="lazy" decoding="async"></div></div>
+              <figcaption>Navigation vers le patient</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer la carte, le temps estimé et le bouton d'arrivée. Insister&nbsp;: ne pas sauter «&nbsp;Arrivé sur site&nbsp;».</aside>
+          </article>
+
+          <article class="lesson slide" id="signalement">
+            <div>
+              <h3>Le signalement, cœur clinique</h3>
+              <p class="lead">Le signalement est le dossier médical de terrain. Chaque étape correspond à une phase clinique&nbsp;: vous avancez dans l'ordre et pouvez revenir en arrière.</p>
+              <dl class="defs">
+                <div><dt>En route</dt><dd>Direction vers le lieu de l'incident.</dd></div>
+                <div><dt>Victimes sur site</dt><dd>Une victime ou afflux massif.</dd></div>
+                <div><dt>Évaluation</dt><dd>Bilan ABCDE structuré.</dd></div>
+                <div><dt>Surveillance</dt><dd>Suivi clinique continu.</dd></div>
+                <div><dt>Constantes</dt><dd>Paramètres vitaux et chronologie.</dd></div>
+                <div><dt>Premiers soins</dt><dd>Gestes réalisés et médicaments.</dd></div>
+                <div><dt>Plan d'évacuation</dt><dd>Transport ou traité sur place.</dd></div>
+                <div><dt>Affectation</dt><dd>Choix de la structure de destination.</dd></div>
+                <div><dt>Attente admission</dt><dd>Remise au personnel hospitalier.</dd></div>
+                <div><dt>Clôture</dt><dd>Fin de l'intervention pour cette victime.</dd></div>
+              </dl>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer la barre de progression des étapes.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="victimes">
+            <div>
+              <h3>Une ou plusieurs victimes</h3>
+              <p class="lead">Le nombre de victimes détermine le parcours. En afflux massif, chaque victime a son propre dossier.</p>
+              <ul class="list">
+                <li><strong>Une seule victime</strong>&nbsp;: parcours classique, comme pour un appel habituel.</li>
+                <li><strong>Plusieurs victimes</strong>&nbsp;: un dossier par personne, avec passage rapide de l'une à l'autre.</li>
+                <li>Le compteur <em>patients en traitement</em> permet de naviguer entre les victimes.</li>
+                <li>Âge, sexe et repère d'affichage se modifient pour chaque victime.</li>
+                <li>La liste des victimes peut changer pendant l'intervention.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/victimes.jpg" width="540" height="1200" alt="Choix entre une seule victime et plusieurs victimes" loading="lazy" decoding="async"></div></div>
+              <figcaption>Combien de victimes&nbsp;?</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> En afflux, chaque victime a son propre parcours clinique. Ne pas mélanger les bilans.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="abcde">
+            <div>
+              <h3>Le bilan ABCDE</h3>
+              <p class="lead">L'évaluation suit la méthode ABCDE. Les questions s'adaptent au type d'incident et aboutissent à une catégorie de triage.</p>
+              <ul class="list">
+                <li><strong>A</strong>, voies aériennes&nbsp;: libres ou obstruées.</li>
+                <li><strong>B</strong>, respiration&nbsp;: fréquence, effort, SpO₂.</li>
+                <li><strong>C</strong>, circulation&nbsp;: pouls, hémorragie, perfusion.</li>
+                <li><strong>D</strong>, conscience&nbsp;: AVPU, pupilles.</li>
+                <li><strong>E</strong>, exposition&nbsp;: température, lésions, environnement.</li>
+              </ul>
+              <ul class="triage" aria-label="Catégories de triage">
+                <li><i style="background:#c62828"></i><span><strong>Rouge</strong>&nbsp;: immédiat, urgence vitale</span></li>
+                <li><i style="background:#ef6c00"></i><span><strong>Orange</strong>&nbsp;: très urgent</span></li>
+                <li><i style="background:#f9a825"></i><span><strong>Jaune</strong>&nbsp;: urgent</span></li>
+                <li><i style="background:#2e7d32"></i><span><strong>Vert</strong>&nbsp;: non urgent</span></li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/abcde.jpg" width="540" height="1200" alt="Évaluation, question A : voies aériennes libres ?" loading="lazy" decoding="async"></div></div>
+              <figcaption>Évaluation, étape A</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Les questions changent selon le type d'incident. Rappeler que le triage peut être réévalué à tout moment.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="constantes">
+            <div>
+              <h3>Les constantes</h3>
+              <p class="lead">Les constantes alimentent une chronologie clinique horodatée. L'application signale les valeurs inhabituelles.</p>
+              <ul class="list">
+                <li>Tension, fréquence cardiaque, SpO₂, température, fréquence respiratoire, glycémie.</li>
+                <li>Chronologie des évaluations, gestes et traitements.</li>
+                <li>Si l'état du patient évolue, l'application peut proposer de reclasser le triage.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/constantes.jpg" width="540" height="1200" alt="Saisie de la SpO2 et de la fréquence respiratoire" loading="lazy" decoding="async"></div></div>
+              <figcaption>Saisie des constantes</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Réévaluer régulièrement. La chronologie alimente directement le rapport final.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="soins">
+            <div>
+              <h3>Premiers soins et médicaments</h3>
+              <p class="lead">Cochez chaque geste réalisé et enregistrez les médicaments administrés. Tout est horodaté.</p>
+              <ul class="list">
+                <li>Liste des gestes réalisés sur le terrain.</li>
+                <li>Médicaments, avec une aide sur les voies d'administration.</li>
+                <li>Chaque action est datée et reprise dans le journal d'intervention.</li>
+              </ul>
+              <p class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg><span>L'application trace vos actes&nbsp;; elle ne remplace pas votre jugement clinique.</span></p>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/soins.jpg" width="540" height="1200" alt="Historique des soins et médicaments, horodatés" loading="lazy" decoding="async"></div></div>
+              <figcaption>Soins et médicaments</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer l'ajout d'un soin et sa trace dans le journal.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="evacuation">
+            <div>
+              <h3>Évacuer ou traiter sur place</h3>
+              <p class="lead">Après stabilisation, deux issues sont possibles. Ce choix oriente toute la suite du parcours.</p>
+              <ul class="list">
+                <li><strong>Transport hospitalier</strong>&nbsp;: affectation, transport puis admission.</li>
+                <li><strong>Traité sur place</strong>&nbsp;: clôture de la victime, si son état est stable.</li>
+              </ul>
+              <p class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg><span>Traité sur place&nbsp;: patient stable, sans besoin d'une structure. Documentez la décision et les dernières constantes.</span></p>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/evacuation.jpg" width="540" height="1200" alt="Orientation : transport hospitalier ou traité sur place" loading="lazy" decoding="async"></div></div>
+              <figcaption>Choix de l'orientation</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Bien documenter la justification clinique.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="affectation">
+            <div>
+              <h3>Choisir l'hôpital</h3>
+              <p class="lead">Les structures proches s'affichent avec la distance et le temps de trajet. Le choix dépend du patient, pas seulement de la distance.</p>
+              <ul class="list">
+                <li>Structures suggérées, et recherche par nom.</li>
+                <li><strong>Demander</strong>&nbsp;: la structure reçoit votre demande d'admission.</li>
+                <li>Réponse en temps réel&nbsp;: en attente, acceptée ou refusée.</li>
+                <li>Moyens de transport&nbsp;: ambulance standard, SMUR ou réanimation, moto, transport personnel.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/affectation.jpg" width="540" height="1200" alt="Liste des structures suggérées avec distance et durée" loading="lazy" decoding="async"></div></div>
+              <figcaption>Structures suggérées</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Faire choisir un hôpital sur l'application de test. Discuter des critères&nbsp;: spécialité, saturation.</aside>
+          </article>
+
+          <article class="lesson slide" id="hopital">
+            <div>
+              <h3>Ce que voit l'hôpital</h3>
+              <p class="lead">Pendant que vous attendez, l'hôpital suit la demande dans sa propre application. L'acceptation à distance ne remplace pas la remise physique du patient.</p>
+              <dl class="defs">
+                <div><dt>Demandes</dt><dd>L'hôpital accepte ou refuse votre demande d'admission.</dd></div>
+                <div><dt>En route</dt><dd>Il suit l'arrivée du patient et l'heure estimée.</dd></div>
+                <div><dt>Admissions</dt><dd>Triage hospitalier et prise en charge effective.</dd></div>
+              </dl>
+              <ul class="list">
+                <li>De votre côté, <em>En attente de confirmation</em> reste affiché jusqu'à la réponse.</li>
+              </ul>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> La remise physique est distincte de l'acceptation à distance. Ne pas clôturer avant les deux.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="transport">
+            <div>
+              <h3>Vers l'hôpital</h3>
+              <p class="lead">Une fois l'hôpital d'accord, la navigation vous guide jusqu'à la structure.</p>
+              <ul class="list">
+                <li>Navigation intégrée vers la structure choisie.</li>
+                <li>Ouverture possible dans Waze ou Google Maps.</li>
+                <li>À l'arrivée, touchez <strong>Arrivé à l'hôpital</strong>.</li>
+                <li>Puis l'étape <strong>Attente admission</strong>&nbsp;: la remise du patient au personnel.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/transport.jpg" width="540" height="1200" alt="Navigation vers l'hôpital avec le bouton Arrivé à l'hôpital" loading="lazy" decoding="async"></div></div>
+              <figcaption>Navigation vers l'hôpital</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Ne pas clôturer avant la confirmation de prise en charge. Montrer l'ouverture dans une application de navigation externe.</aside>
+          </article>
+
+          <article class="lesson slide" id="cloture">
+            <div>
+              <h3>Clôturer l'intervention</h3>
+              <p class="lead">La clôture envoie le dossier à la centrale et archive la mission. Le rapport est disponible tout de suite.</p>
+              <ul class="list">
+                <li>Écran de clôture, avec synchronisation (<em>Clôture en cours…</em>).</li>
+                <li>Mission archivée dans <strong>Historique</strong>.</li>
+                <li>Rapport d'intervention à consulter, partager ou imprimer.</li>
+              </ul>
+              <p class="callout warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><span>En afflux, vérifiez que chaque victime est clôturée.</span></p>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer le rapport généré.</aside>
+          </article>
+        </section>
+
+        <!-- ============ Partie 4 ============ -->
+        <section class="part" id="outils">
+          <header class="part-head slide">
+            <span class="kicker">Partie 4</span>
+            <h2>Les outils</h2>
+            <p>Ce qui reste à portée de main pendant toute la garde.</p>
+          </header>
+
+          <article class="lesson slide has-shot" id="appels">
+            <div>
+              <h3>Appeler sans quitter l'application</h3>
+              <p class="lead">Les appels sont intégrés&nbsp;: pas besoin de quitter la mission pour joindre la centrale, le patient ou l'hôpital.</p>
+              <dl class="defs">
+                <div><dt>Centrale</dt><dd>Depuis l'accueil ou l'écran de mission.</dd></div>
+                <div><dt>Patient</dt><dd>Depuis le journal d'intervention.</dd></div>
+                <div><dt>Hôpital</dt><dd>Une fois la structure acceptée.</dd></div>
+              </dl>
+              <ul class="list">
+                <li>Une barre d'appel reste visible pendant toute la communication.</li>
+                <li>Les appels entrants sonnent comme un appel normal, même téléphone verrouillé.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/appels.jpg" width="540" height="1200" alt="Appel en cours vers la centrale" loading="lazy" decoding="async"></div></div>
+              <figcaption>Appel vers la centrale</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer le bouton d'appel de la centrale, sans lancer d'appel réel si possible.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="journal">
+            <div>
+              <h3>Le journal d'intervention</h3>
+              <p class="lead">Le journal retrace tout ce qui s'est passé, dans l'ordre&nbsp;: actions automatiques, notes et photos de terrain. La centrale le voit en direct.</p>
+              <ul class="list">
+                <li>Fil chronologique et horodaté de toutes les actions.</li>
+                <li>Notes et photos ajoutables à tout moment.</li>
+                <li>Accessible depuis l'accueil, le signalement et l'écran de mission.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/journal.jpg" width="540" height="1200" alt="Chronologie de l'intervention, de l'orientation à l'arrivée à l'hôpital" loading="lazy" decoding="async"></div></div>
+              <figcaption>Journal d'intervention</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Utile pour le rapport final et en cas de litige. Montrer l'ajout d'une note.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="carte">
+            <div>
+              <h3>La carte</h3>
+              <p class="lead">La carte donne une vue d'ensemble&nbsp;: incidents en cours, structures sanitaires et collègues en service.</p>
+              <ul class="list">
+                <li>Incidents en cours, avec leur position.</li>
+                <li>Hôpitaux, pharmacies, centres de santé, maternités.</li>
+                <li>Autres équipes en service, en temps réel.</li>
+                <li>Itinéraire vers n'importe quel point.</li>
+              </ul>
+              <p class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg><span>Un complément utile, qui ne remplace pas l'écran de mission.</span></p>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/carte.jpg" width="540" height="1200" alt="Carte de Kinshasa avec hôpitaux et position de l'unité" loading="lazy" decoding="async"></div></div>
+              <figcaption>Onglet Carte</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Utile pour repérer un hôpital ou un collègue proche.</aside>
+          </article>
+
+          <article class="lesson slide has-shot" id="profil">
+            <div>
+              <h3>Profil et ressources</h3>
+              <p class="lead">Le profil regroupe les réglages de l'unité et des ressources accessibles à tout moment, même en mission.</p>
+              <ul class="list">
+                <li><strong>Protocoles médicaux</strong>&nbsp;: la base documentaire, consultable hors connexion.</li>
+                <li><strong>Statistiques de l'unité</strong>&nbsp;: missions, délais d'arrivée, évacuations.</li>
+                <li><strong>Notifications</strong> et mode <strong>Ne pas déranger</strong>.</li>
+                <li><strong>Support &amp; Bugs</strong>&nbsp;: signaler un problème d'application, de véhicule ou de matériel.</li>
+                <li>En bas de l'écran&nbsp;: la version installée.</li>
+              </ul>
+            </div>
+            <figure>
+              <div class="device sm"><div class="screen"><span class="camera"></span><img class="shot" src="/formation/img/statistiques.jpg" width="540" height="1200" alt="Statistiques de l'unité sur sept jours" loading="lazy" decoding="async"></div></div>
+              <figcaption>Statistiques de l'unité</figcaption>
+            </figure>
+            <aside class="notes"><strong>Notes du formateur.</strong> Montrer les protocoles médicaux.</aside>
+          </article>
+        </section>
+
+        <!-- ============ Partie 5 ============ -->
+        <section class="part" id="a-retenir">
+          <header class="part-head slide">
+            <span class="kicker">Partie 5</span>
+            <h2>À retenir</h2>
+            <p>Les réflexes à acquérir, les pièges à éviter et un exercice complet.</p>
+          </header>
+
+          <article class="lesson slide" id="reflexes">
+            <div>
+              <h3>Les bons réflexes</h3>
+              <p class="lead">Avant l'atelier pratique, vérifiez que ces réflexes sont acquis.</p>
+              <ul class="checks">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Activer le service en début de garde&nbsp;: c'est la première action.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Vérifier internet et la localisation avant d'attendre des alertes.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Accepter ou refuser dans le délai&nbsp;; un refus motivé vaut mieux qu'un silence.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Confirmer «&nbsp;Arrivé sur site&nbsp;» avant de commencer le bilan.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Documenter ABCDE et constantes à chaque réévaluation.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Choisir l'hôpital adapté au patient, pas seulement le plus proche.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Attendre la confirmation d'admission avant de clôturer.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Relire le rapport d'intervention en fin de garde.</span></li>
+              </ul>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Demander aux participants de cocher mentalement chaque point.</aside>
+          </article>
+
+          <article class="lesson slide" id="erreurs">
+            <div>
+              <h3>Les erreurs fréquentes</h3>
+              <p class="lead">Elles reviennent souvent lors des premières gardes. Les connaître permet de les éviter.</p>
+              <ul class="checks bad">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Oublier d'activer le service&nbsp;: aucune alerte n'arrive.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Clôturer avant la remise effective du patient à l'hôpital.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Sauter «&nbsp;Arrivé sur site&nbsp;» et commencer le bilan trop tôt.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Confondre l'acceptation de l'hôpital à distance et l'admission physique.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>En afflux, ne pas suivre chaque victime dans son propre dossier.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Perdre la connexion sans s'en rendre compte&nbsp;: surveillez l'indicateur «&nbsp;Connexion perdue&nbsp;».</span></li>
+              </ul>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Discuter chaque erreur avec des exemples du terrain.</aside>
+          </article>
+
+          <article class="lesson slide" id="glossaire">
+            <div>
+              <h3>Glossaire</h3>
+              <p class="lead">Les termes affichés dans l'application et leur sens opérationnel.</p>
+              <dl class="defs">
+                <div><dt>En service / Hors service</dt><dd>Disponibilité de l'unité pour recevoir une mission.</dd></div>
+                <div><dt>Dispatché</dt><dd>Mission confiée, l'équipe part vers le patient.</dd></div>
+                <div><dt>Sur zone</dt><dd>L'équipe est sur les lieux de l'incident.</dd></div>
+                <div><dt>Signalement</dt><dd>Le dossier clinique complet du patient.</dd></div>
+                <div><dt>Affectation</dt><dd>Le choix de la structure hospitalière de destination.</dd></div>
+                <div><dt>Remise du patient</dt><dd>Le transfert physique et administratif à l'hôpital.</dd></div>
+                <div><dt>Afflux massif</dt><dd>Un incident avec plusieurs victimes en même temps.</dd></div>
+              </dl>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Peut être distribué en fiche mémo aux nouvelles recrues.</aside>
+          </article>
+
+          <article class="lesson slide" id="atelier">
+            <div>
+              <h3>Atelier pratique&nbsp;: 15 minutes</h3>
+              <p class="lead">Chaque binôme réalise ce parcours complet sur un compte de test, sous la supervision du formateur.</p>
+              <ol class="list">
+                <li>Se connecter et activer le service.</li>
+                <li>Accepter une mission de test.</li>
+                <li>Simuler l'arrivée sur site.</li>
+                <li>Remplir un bilan ABCDE pour une victime fictive.</li>
+                <li>Choisir l'évacuation et un hôpital de test.</li>
+                <li>Simuler l'arrivée à l'hôpital, puis clôturer la mission.</li>
+              </ol>
+              <p class="callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg><span>Un téléphone par binôme, avec l'application <a href="/test/">EB Urgence TEST</a> et les comptes de test fournis par le formateur. Jamais l'application réelle.</span></p>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Superviser les binômes et corriger en direct. Prévoir 15 minutes, plus 5 minutes de débriefing.</aside>
+          </article>
+
+          <article class="lesson slide" id="apres">
+            <div>
+              <h3>Après la formation</h3>
+              <p class="lead">Prochaine étape&nbsp;: une garde supervisée avec votre référent terrain.</p>
+              <ul class="list">
+                <li>Un problème avec l'application&nbsp;: <kbd>Profil</kbd>&nbsp;› <kbd>Support &amp; Bugs</kbd>.</li>
+                <li>Installation, autorisations, mises à jour&nbsp;: <a href="/aide/">la page d'aide</a>.</li>
+                <li>Une question sur une procédure&nbsp;: votre référent formation.</li>
+              </ul>
+            </div>
+            <aside class="notes"><strong>Notes du formateur.</strong> Recueillir les retours pour améliorer la prochaine session. Confirmer la date de la garde supervisée.</aside>
+          </article>
+        </section>
+
+        <div class="band guide-end">
+          <div>
+            <h2>Prêt pour le terrain&nbsp;?</h2>
+            <p>Installez l'application, connectez-vous avec vos identifiants et activez le service en début de garde.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="/#telecharger">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+              Télécharger l'application
+            </a>
+            <a class="btn btn-secondary" href="/aide/">Aide à l'installation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="present-bar present-only" id="present-bar" role="toolbar" aria-label="Présentation">
+    <span class="progress" id="present-progress"></span>
+    <span class="count" id="present-count"></span>
+    <span class="hint">← → naviguer · N notes · F plein écran · Échap quitter</span>
+    <span class="group">
+      <button class="btn btn-secondary btn-sm" type="button" id="present-prev">Précédent</button>
+      <button class="btn btn-primary btn-sm" type="button" id="present-next">Suivant</button>
+      <button class="btn btn-quiet btn-sm" type="button" id="present-notes" aria-pressed="false">Notes</button>
+      <button class="btn btn-quiet btn-sm" type="button" id="present-exit">Quitter</button>
+    </span>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="/assets/icon-192.png" width="40" height="40" alt="">
+          <div><strong>Étoile Bleue</strong><span>Aide médicale urgente · République démocratique du Congo</span></div>
+        </div>
+        <nav class="foot-links" aria-label="Liens de pied de page">
+          <a href="/#telecharger">Télécharger</a>
+          <a href="/formation/">Formation</a>
+          <a href="/aide/">Aide</a>
+          <a href="/test/">Version de test</a>
+        </nav>
+      </div>
+      <p class="legal">© 2026 Étoile Bleue. Application réservée aux équipes d'intervention.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Sommaire replié sur téléphone.
+      var toc = document.getElementById('toc');
+      if (window.matchMedia('(max-width: 1023px)').matches) toc.removeAttribute('open');
+      toc.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A' && window.matchMedia('(max-width: 1023px)').matches) toc.removeAttribute('open');
+      });
+
+      // Rubrique en cours surlignée dans le sommaire.
+      var liens = {};
+      [].forEach.call(toc.querySelectorAll('a'), function (a) { liens[a.getAttribute('href').slice(1)] = a; });
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            var a = liens[e.target.id];
+            if (!a) return;
+            [].forEach.call(toc.querySelectorAll('.is-active'), function (x) { x.classList.remove('is-active'); });
+            a.classList.add('is-active');
+          });
+        }, { rootMargin: '-20% 0px -70% 0px' });
+        [].forEach.call(document.querySelectorAll('.lesson, .part'), function (s) { obs.observe(s); });
+      }
+
+      // Mode présentation : une fiche à la fois, plein écran, notes du formateur avec N.
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var body = document.body, i = 0;
+      var count = document.getElementById('present-count');
+      var progress = document.getElementById('present-progress');
+      var notesBtn = document.getElementById('present-notes');
+
+      function titre(s) { var h = s.querySelector('h1, h2, h3'); return h ? h.textContent : ''; }
+      function montrer(n) {
+        i = Math.max(0, Math.min(slides.length - 1, n));
+        slides.forEach(function (s, k) { s.classList.toggle('is-current', k === i); });
+        slides[i].scrollTop = 0;
+        count.textContent = (i + 1) + ' / ' + slides.length + ' · ' + titre(slides[i]);
+        progress.style.width = ((i + 1) / slides.length * 100) + '%';
+      }
+      function demarrer() {
+        // Reprend à la fiche visible à l'écran.
+        var depart = 0;
+        slides.forEach(function (s, k) { if (s.getBoundingClientRect().top < window.innerHeight / 3) depart = k; });
+        body.classList.add('presenting');
+        montrer(depart);
+      }
+      function quitter() {
+        body.classList.remove('presenting', 'show-notes');
+        notesBtn.setAttribute('aria-pressed', 'false');
+        slides.forEach(function (s) { s.classList.remove('is-current'); });
+        if (document.fullscreenElement) document.exitFullscreen();
+        slides[i].scrollIntoView();
+      }
+      function notes() {
+        var on = body.classList.toggle('show-notes');
+        notesBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      }
+      function pleinEcran() {
+        if (document.fullscreenElement) document.exitFullscreen();
+        else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+      }
+
+      document.getElementById('present-start').addEventListener('click', demarrer);
+      document.getElementById('present-prev').addEventListener('click', function () { montrer(i - 1); });
+      document.getElementById('present-next').addEventListener('click', function () { montrer(i + 1); });
+      document.getElementById('present-exit').addEventListener('click', quitter);
+      notesBtn.addEventListener('click', notes);
+
+      document.addEventListener('keydown', function (e) {
+        if (!body.classList.contains('presenting') || e.metaKey || e.ctrlKey || e.altKey) return;
+        var k = e.key;
+        if (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || k === ' ') { e.preventDefault(); montrer(i + 1); }
+        else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); montrer(i - 1); }
+        else if (k === 'Home') { e.preventDefault(); montrer(0); }
+        else if (k === 'End') { e.preventDefault(); montrer(slides.length - 1); }
+        else if (k === 'n' || k === 'N') notes();
+        else if (k === 'f' || k === 'F') pleinEcran();
+        else if (k === 'Escape') quitter();
+      });
+    })();
+  </script>
+</body>
+</html>

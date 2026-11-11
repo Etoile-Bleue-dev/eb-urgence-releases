@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Aide · EB Urgence</title>
   <meta name="description" content="Installer EB Urgence, accepter les autorisations, comprendre les mises à jour et résoudre les problèmes courants.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://apps.urgences-rdc.com/aide/">
-  <meta name="theme-color" content="#0D0D0D">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EB Urgence">
   <meta property="og:title" content="Aide · EB Urgence">
@@ -16,6 +17,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="/assets/favicon-64.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -28,9 +32,13 @@
         <span><strong>EB Urgence</strong><small>Étoile Bleue</small></span>
       </a>
       <nav class="nav" aria-label="Navigation principale">
+        <a href="/formation/">Formation</a>
         <a class="wide" href="/#installer">Installer</a>
         <a href="/aide/" aria-current="page">Aide</a>
-        <a href="/">Télécharger</a>
+        <a class="btn btn-primary btn-sm" href="/#telecharger" aria-label="Télécharger l'application">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+          <span class="label">Télécharger</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -51,7 +59,7 @@
 
     <div class="doc">
       <section class="card" id="installation">
-        <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg></span>Installation</h2>
+        <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg></span>Installation</h2>
 
         <details id="installer">
           <summary>Comment installer l'application&nbsp;?</summary>
@@ -118,7 +126,7 @@
       </section>
 
       <section class="card" id="autorisations">
-        <h2><span class="ic green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Autorisations</h2>
+        <h2><span class="icon ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Autorisations</h2>
 
         <details id="position">
           <summary>Position&nbsp;: «&nbsp;Toujours autoriser&nbsp;»</summary>
@@ -157,7 +165,7 @@
       </section>
 
       <section class="card" id="mises-a-jour">
-        <h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></span>Mises à jour</h2>
+        <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></span>Mises à jour</h2>
 
         <details id="automatiques">
           <summary>Comment l'application se met-elle à jour&nbsp;?</summary>
@@ -188,7 +196,7 @@
       </section>
 
       <section class="card" id="en-service">
-        <h2><span class="ic red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>En service</h2>
+        <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>En service</h2>
 
         <details id="missions-app-fermee">
           <summary>Je ne reçois pas les missions quand l'application est fermée</summary>
@@ -227,8 +235,8 @@
         </details>
       </section>
 
-      <section class="card contact" id="contact">
-        <h2><span class="ic orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Contacter le support</h2>
+      <section class="card plain" id="contact">
+        <h2><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Contacter le support</h2>
         <p>Dans l'application&nbsp;: <kbd>Profil</kbd>&nbsp;› <kbd>Support &amp; Bugs</kbd>. Décrivez le problème&nbsp;; votre version et votre modèle de téléphone sont joints automatiquement.</p>
         <p>Si l'application ne s'ouvre pas, prévenez votre chef d'équipe ou la centrale.</p>
       </section>
@@ -240,10 +248,11 @@
       <div class="foot-grid">
         <div class="foot-brand">
           <img src="/assets/icon-192.png" width="40" height="40" alt="">
-          <div><strong>ÉTOILE BLEUE</strong>Aide médicale urgente · République démocratique du Congo</div>
+          <div><strong>Étoile Bleue</strong><span>Aide médicale urgente · République démocratique du Congo</span></div>
         </div>
         <nav class="foot-links" aria-label="Liens de pied de page">
-          <a href="/">Télécharger</a>
+          <a href="/#telecharger">Télécharger</a>
+          <a href="/formation/">Formation</a>
           <a href="/aide/">Aide</a>
           <a href="/test/">Version de test</a>
         </nav>

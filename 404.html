@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Page introuvable · EB Urgence</title>
-  <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0D0D0D">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/png" href="/assets/favicon-64.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -16,7 +19,10 @@
         <img src="/assets/icon-192.png" width="34" height="34" alt="">
         <span><strong>EB Urgence</strong><small>Étoile Bleue</small></span>
       </a>
-      <nav class="nav" aria-label="Navigation principale"><a href="/aide/">Aide</a></nav>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="/formation/">Formation</a>
+        <a href="/aide/">Aide</a>
+      </nav>
     </div>
   </header>
   <main class="wrap">
@@ -24,7 +30,7 @@
       <p class="crumbs">Erreur 404</p>
       <h1>Page introuvable</h1>
       <p>Le lien est peut-être incomplet. Pour installer l'application, repartez de la page d'accueil.</p>
-      <a class="ghost" href="/">Aller à l'accueil</a>
+      <div class="actions"><a class="btn btn-primary" href="/">Aller à l'accueil</a></div>
     </div>
   </main>
 </body>
